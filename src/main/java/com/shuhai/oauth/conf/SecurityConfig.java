@@ -34,6 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 //todo custom Login
 //                .loginPage(null).loginProcessingUrl(null)
+                .loginPage("/login.html")
                 .permitAll();
     }
 

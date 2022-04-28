@@ -23,6 +23,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         clients.inMemory()
                 .withClient("admin")
                 .secret(passwordEncoder.encode("654321"))
+                .autoApprove("all")
                 .accessTokenValiditySeconds(3600)
                 .redirectUris("http://www.baidu.com", "http://www.cnblogs.com")
                 .scopes("all")
