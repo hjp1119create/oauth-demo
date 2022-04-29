@@ -3,11 +3,17 @@ spring:
     name: oauth
   server:
     port: 8080
-#  mvc:
-#    view:
-#      prefix: /templates/
+  mvc:
+    view:
+      prefix: /templates/
+  thymeleaf:
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    content: text/html
+    cache: false
 #      suffix: .html
 #    static-path-pattern: /static/*
+
 
 
 logging:
